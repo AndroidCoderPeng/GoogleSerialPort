@@ -12,16 +12,15 @@ extern "C" {
  * Method:    open
  * Signature: (Ljava/lang/String;II)Ljava/io/FileDescriptor;
  */
-JNIEXPORT jobject JNICALL Java_com_casic_pengxh_ndk_uart_SerialPort_open
-  (JNIEnv *, jclass, jstring, jint, jint);
+JNIEXPORT jobject
+JNICALL Java_com_casic_pengxh_ndk_uart_SerialPort_open(JNIEnv *, jclass, jstring, jint, jint);
 
 /*
  * Class:     com_casic_pengxh_ndk_uart_SerialPort
  * Method:    close
  * Signature: ()V
  */
-JNIEXPORT void JNICALL Java_com_casic_pengxh_ndk_uart_SerialPort_close
-  (JNIEnv *, jobject);
+JNIEXPORT void JNICALL Java_com_casic_pengxh_ndk_uart_SerialPort_close(JNIEnv *, jobject);
 
 #ifdef __cplusplus
 }

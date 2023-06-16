@@ -1,6 +1,6 @@
 # GoogleSerialPort
 
-Android NDK开发入门，零基础，已Google官方串口通信作为例子
+Android NDK开发入门，零基础，以Google官方串口通信作为例子
 
 ----
 
@@ -74,11 +74,11 @@ Project】一下项目，完成后会在工程目录app/build/intermediates/java
 
 ### 5、新建 .sh 脚本（SerialPort.h）
 
-此脚本的目的是未了根据声明了native方法的文件生成C/C++头文件
+此脚本的目的是为了根据声明了native方法的文件生成C/C++头文件
 
 ```shell
 #!/bin/sh
-javah -o SerialPort.h -jni -classpath ../java com.casic.pengxh.ndk.uart.SerialPort
+javah -encoding utf-8 -o SerialPort.h -jni -classpath ../java com.casic.pengxh.ndk.uart.SerialPort
 
 ```
 
@@ -176,6 +176,10 @@ public class SerialPort {
 ```
 
 ### 9、在jni目录下创建Android.mk文件和Application.mk文件
+
+![Android.mk](app/introduceImage/img_11.png)
+
+![Application.mk](app/introduceImage/img_12.png)
 
 ### 10、编译 .so 库
 

@@ -12,6 +12,12 @@ android {
         versionCode 1
         versionName "1.0.0.0"
 
+        ndk {
+            moduleName "serial_port"
+            //"log"表示加入Android Logcat日志，需要导入 #include "android/log.h"
+            ldLibs "log"
+        }
+
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 

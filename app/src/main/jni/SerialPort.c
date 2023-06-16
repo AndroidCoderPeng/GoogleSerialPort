@@ -95,7 +95,8 @@ static speed_t getBaudRate(jint baudRate) {
  * Method:    open
  * Signature: (Ljava/lang/String;II)Ljava/io/FileDescriptor;
  */
-JNIEXPORT jobject JNICALL Java_com_casic_pengxh_ndk_uart_SerialPort_open(JNIEnv *env, jclass thiz, jstring path, jint baudRate, jint flags)
+JNIEXPORT jobject
+JNICALL Java_com_casic_pengxh_ndk_uart_SerialPort_open(JNIEnv *env, jclass thiz, jstring path, jint baudRate, jint flags)
 {
     int fd;
     speed_t speed;
